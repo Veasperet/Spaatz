@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body,
 div,
@@ -207,8 +206,8 @@ main button span {
 }
 
 .collaboration {
-  max-width: 1380px;
-  margin: 160px auto;
+  max-width: 1340px;
+  margin: 140px auto;
 }
 .collaboration .approach__grid {
   display: grid;
@@ -252,7 +251,7 @@ main button span {
   align-items: center;
 }
 .collaboration .approach__grid li span img {
-  width: 95px; /* ← фиксируем размеры */
+  width: 95px;
   height: 95px;
   object-fit: contain;
   display: block;
@@ -278,6 +277,88 @@ main button span {
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.capture {
+  background: #f6f6f6;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 140px 0px;
+  color: #1b2534;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+.capture .capture__grid {
+  display: grid;
+  grid-template-columns: 1fr 644px;
+  gap: 40px 60px;
+  align-items: center;
+  margin-bottom: 28px;
+  width: 1340px;
+  padding: 0px 50px;
+}
+.capture .capture__grid h2 {
+  font-size: 65px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin: 0 0 16px;
+  font-weight: bold;
+}
+.capture .capture__grid h2 .accent {
+  color: #29a0f5;
+}
+.capture .capture__grid .capture__lead {
+  max-width: 650px;
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.features-cards {
+  display: flex;
+  gap: 20px;
+  width: 1340px;
+  padding: 0px 50px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  height: 164px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #1b2534;
+  justify-content: flex-start;
+  text-align: left;
+  line-height: 1.2;
+}
+.card .card--tools {
+  width: 340px;
+}
+.card .icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+}
+.card .card--growth .percent {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.card--responsive {
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.card--growth img {
+  width: 190px;
 }
 
 /*# sourceMappingURL=style.css.map */
