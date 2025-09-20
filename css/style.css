@@ -88,7 +88,6 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -133,7 +132,7 @@ table {
 
 .hero {
   background-image: url("../img/hero-bg.jpg");
-  background-repeat: no-repeat; /* 🔹 отключаем повтор */
+  background-repeat: no-repeat;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -142,7 +141,6 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
   padding: 40px 50px;
 }
 .navbar img {
@@ -161,15 +159,16 @@ table {
 .navbar .prs {
   color: #0082f3;
 }
-.navbar .request-btn {
+.navbar button {
   font-family: "Open Sans", sans-serif;
   background: #1b2534;
-  padding: 16px 36px;
+  padding: 18px 36px;
   border: none;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 17px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 main {
@@ -182,18 +181,18 @@ main h1 {
   margin-top: 120px;
   line-height: 1.4;
   font-weight: 600;
-  font-size: 80px;
+  font-size: clamp(48px, 6vw, 80px);
   color: #1b2534;
 }
 main h1 strong {
   color: #29a0f5;
 }
 main button {
-  margin-top: 24px;
+  margin: 24px 0 80px;
   font-family: "Open Sans", sans-serif;
-  display: inline-flex; /* превращаем кнопку в flex-контейнер */
-  align-items: center; /* центруем и текст, и иконку */
-  gap: 8px; /* отступ */
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 20px 36px;
   color: #1b2534;
   background: #fff;
@@ -204,7 +203,81 @@ main button {
   cursor: pointer;
 }
 main button span {
-  line-height: 1;
+  line-height: 0;
+}
+
+.collaboration {
+  max-width: 1380px;
+  margin: 160px auto;
+}
+.collaboration .approach__grid {
+  display: grid;
+  grid-template-columns: 1fr 600px;
+  gap: 60px;
+  align-items: center;
+}
+.collaboration .approach__grid h2 {
+  font-size: 65px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.collaboration .approach__grid h2 span {
+  color: #29a0f5;
+}
+.collaboration .approach__grid .approach__lead {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #1b2534;
+  margin-bottom: 40px;
+  max-width: 605px;
+  font-weight: 400;
+}
+.collaboration .approach__grid ul {
+  list-style: none;
+  display: grid;
+  gap: 30px;
+}
+.collaboration .approach__grid li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.collaboration .approach__grid li span {
+  flex: 0 0 80px;
+  height: 80px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collaboration .approach__grid li span img {
+  width: 95px; /* ← фиксируем размеры */
+  height: 95px;
+  object-fit: contain;
+  display: block;
+}
+.collaboration .approach__grid li .feature__text h3 {
+  font-size: 30px;
+  margin-bottom: 6px;
+  font-weight: 400;
+  color: #1b2534;
+}
+.collaboration .approach__grid li .feature__text .feature__desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: #606060;
+}
+.collaboration .approach__grid figure {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+.collaboration .approach__grid figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
