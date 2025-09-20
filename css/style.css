@@ -1,0 +1,210 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.hero {
+  background-image: url("../img/hero-bg.jpg");
+  background-repeat: no-repeat; /* 🔹 отключаем повтор */
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 40px 50px;
+}
+.navbar img {
+  height: 50px;
+}
+.navbar ul {
+  display: flex;
+  gap: 60px;
+}
+.navbar a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #1b2534;
+}
+.navbar .prs {
+  color: #0082f3;
+}
+.navbar .request-btn {
+  font-family: "Open Sans", sans-serif;
+  background: #1b2534;
+  padding: 16px 36px;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+main h1 {
+  margin-top: 120px;
+  line-height: 1.4;
+  font-weight: 600;
+  font-size: 80px;
+  color: #1b2534;
+}
+main h1 strong {
+  color: #29a0f5;
+}
+main button {
+  margin-top: 24px;
+  font-family: "Open Sans", sans-serif;
+  display: inline-flex; /* превращаем кнопку в flex-контейнер */
+  align-items: center; /* центруем и текст, и иконку */
+  gap: 8px; /* отступ */
+  padding: 20px 36px;
+  color: #1b2534;
+  background: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+main button span {
+  line-height: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
